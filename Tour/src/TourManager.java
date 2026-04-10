@@ -109,15 +109,13 @@ public class TourManager {
         Venue venue1 = new Venue("ZiggoDome", "Amsterdam", 5000);
         venues.add(venue1);
 
-        Concert concert1 = new Concert(artist1, venue1, LocalDate.of(2026,04,1), 50,true);
+        Concert concert1 = new Concert(artist1, venue1, LocalDate.of(2026,04,1),
+                50,true);
         concerts.add(concert1);
 
         TourManager tourManagerList = new TourManager("Tourman", 20);
 
     }
-
-
-
 
 }
 

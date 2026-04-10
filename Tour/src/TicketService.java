@@ -27,20 +27,11 @@ public class TicketService {
 
     public int getTotalRevenue(){
         int total = 0;
-        int totalConcertByArtist = getConcertsByArtist().size();
-
-
+        int totalConcertRevenueByArtist = getTourManager().getConcerts().size() * getTotalRevenue();
+        total = totalConcertRevenueByArtist;
+        return total;
     }
 
-    public ArrayList<Concert> getConcertsByArtist(String artist) {
-        ArrayList<Concert> result = new ArrayList<>();
-        for (Concert concert : concerts) {
-            if (concert.getArtist().getName().equalsIgnoreCase(artist)) {
-                result.add(concert);
-            }
-        }
-        return result;
-    }
 }
 
 
